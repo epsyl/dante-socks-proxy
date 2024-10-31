@@ -2,7 +2,7 @@ services:
     dante:
         image: adegtyarev/dante
         command: sockd-username
-        restaart: always
+        restart: always
         environment:
             SOCKD_USER_NAME: $SOCKD_USER_NAME
             SOCKD_USER_PASSWORD: $SOCKD_USER_PASSWORD
